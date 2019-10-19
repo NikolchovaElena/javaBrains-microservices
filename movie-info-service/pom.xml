@@ -8,9 +8,9 @@
         <version>2.2.0.RELEASE</version>
     </parent>
     <groupId>io.javabrains</groupId>
-    <artifactId>movie-catalog-service</artifactId>
+    <artifactId>movie-info-service</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <name>movie-catalog-service</name>
+    <name>movie-info-service</name>
     <description>Demo project for microservices architecture with Spring Boot</description>
 
     <properties>
