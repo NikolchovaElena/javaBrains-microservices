@@ -34,6 +34,4 @@ public class MovieCatalogResource {
                 .map(rating -> this.movieInfoService.getCatalogItem(rating))
                 .collect(Collectors.toList());
     }
-
-
 }
