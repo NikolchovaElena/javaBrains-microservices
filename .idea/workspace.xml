@@ -2,14 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72ee54d1-d020-4515-90ae-42d0d83f8b1a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ratings-data-service/src/main/java/com/example/demo/repositories/RatingRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/example/demo/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/example/demo/filters/JwtRequestFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/example/demo/models/AuthenticationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/example/demo/models/AuthenticationResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/example/demo/util/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-tutorial.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/example/moviecatalogservice/resources/MovieCatalogResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/example/moviecatalogservice/resources/MovieCatalogResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ratings-data-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ratings-data-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ratings-data-service/src/main/java/com/example/demo/RatingsDataServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ratings-data-service/src/main/java/com/example/demo/RatingsDataServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ratings-data-service/src/main/java/com/example/demo/models/Rating.java" beforeDir="false" afterPath="$PROJECT_DIR$/ratings-data-service/src/main/java/com/example/demo/models/Rating.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/example/moviecatalogservice/models/UserRating.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/example/moviecatalogservice/models/UserRating.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-info-service/src/main/java/com/example/demo/resources/MovieResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-info-service/src/main/java/com/example/demo/resources/MovieResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-info-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/movie-info-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ratings-data-service/src/main/java/com/example/demo/models/UserRating.java" beforeDir="false" afterPath="$PROJECT_DIR$/ratings-data-service/src/main/java/com/example/demo/models/UserRating.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ratings-data-service/src/main/java/com/example/demo/resources/RatingDataResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/ratings-data-service/src/main/java/com/example/demo/resources/RatingDataResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ratings-data-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ratings-data-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/discovery-server/target/" />
@@ -17,6 +26,7 @@
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/movie-catalog-service/target/" />
     <ignored path="$PROJECT_DIR$/ratings-data-service/target/" />
+    <ignored path="$PROJECT_DIR$/auth-service/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,27 +44,56 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="movies_db@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="movies_db@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="movies_db@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="auth_db: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="movies_db@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="movies_db: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/movie-catalog-service/src/main/java/com/example/moviecatalogservice/resources/MovieCatalogResource.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/auth-service/src/main/java/com/example/demo/controllers/AuthController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="33" column="64" selection-start-line="33" selection-start-column="64" selection-end-line="33" selection-end-column="64" />
+            <state relative-caret-position="614">
+              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1088#1089#0" expanded="true" />
+                <element signature="e#1123#1124#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/movie-catalog-service/src/main/java/com/example/moviecatalogservice/services/MovieInfoService.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/auth-service/src/main/java/com/example/demo/config/SecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="28" column="14" lean-forward="true" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+            <state relative-caret-position="240">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1940#1941#0" expanded="true" />
+                <element signature="e#1996#1997#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -90,8 +129,23 @@
         <option value="$PROJECT_DIR$/ratings-data-service/src/main/java/demo/resources/RatingDataResource.java" />
         <option value="$PROJECT_DIR$/ratings-data-service/src/main/java/com/example/demo/resources/RatingDataResource.java" />
         <option value="$PROJECT_DIR$/ratings-data-service/pom.xml" />
-        <option value="$PROJECT_DIR$/ratings-data-service/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/example/moviecatalogservice/resources/MovieCatalogResource.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/auth-service/src/main/java/com/example/demo/resources/MovieResource.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/5926eda5-bb4a-41dc-9a19-9c38274df023/console.sql" />
+        <option value="$PROJECT_DIR$/ratings-data-service/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/auth-service/src/main/java/com/example/demo/MovieInfoServiceApplication.java" />
+        <option value="$PROJECT_DIR$/auth-service/src/main/java/com/example/demo/controllers/AuthResource.java" />
+        <option value="$PROJECT_DIR$/auth-service/src/main/java/com/example/demo/config/MyUserDetailsService.java" />
+        <option value="$PROJECT_DIR$/auth-service/src/main/java/com/example/demo/services/MyUserDetailsService.java" />
+        <option value="$PROJECT_DIR$/auth-service/pom.xml" />
+        <option value="$PROJECT_DIR$/auth-service/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/auth-service/src/main/java/com/example/demo/util/JwtUtil.java" />
+        <option value="$PROJECT_DIR$/auth-service/src/main/java/com/example/demo/models/AuthenticationRequest.java" />
+        <option value="$PROJECT_DIR$/auth-service/src/main/java/com/example/demo/models/AuthenticationResponse.java" />
+        <option value="$PROJECT_DIR$/auth-service/src/main/java/com/example/demo/filters/JwtRequestFilter.java" />
+        <option value="$PROJECT_DIR$/auth-service/src/main/java/com/example/demo/config/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/auth-service/src/main/java/com/example/demo/controllers/AuthController.java" />
       </list>
     </option>
   </component>
@@ -101,6 +155,12 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="990" />
@@ -114,6 +174,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -124,80 +186,25 @@
             <path>
               <item name="microservices-tutorial" type="b2602c69:ProjectViewProjectNode" />
               <item name="javabrains-microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="movie-catalog-service" type="462c0819:PsiDirectoryNode" />
+              <item name="auth-service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="microservices-tutorial" type="b2602c69:ProjectViewProjectNode" />
               <item name="javabrains-microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="movie-catalog-service" type="462c0819:PsiDirectoryNode" />
+              <item name="auth-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="microservices-tutorial" type="b2602c69:ProjectViewProjectNode" />
               <item name="javabrains-microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="movie-catalog-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="microservices-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javabrains-microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="movie-catalog-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="microservices-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javabrains-microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="movie-catalog-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="moviecatalogservice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="microservices-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javabrains-microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="movie-catalog-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="moviecatalogservice" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="microservices-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javabrains-microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="movie-catalog-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="moviecatalogservice" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="microservices-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javabrains-microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="movie-info-service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="microservices-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javabrains-microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="movie-info-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="microservices-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javabrains-microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="movie-info-service" type="462c0819:PsiDirectoryNode" />
+              <item name="auth-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="microservices-tutorial" type="b2602c69:ProjectViewProjectNode" />
               <item name="javabrains-microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="movie-info-service" type="462c0819:PsiDirectoryNode" />
+              <item name="auth-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -205,7 +212,7 @@
             <path>
               <item name="microservices-tutorial" type="b2602c69:ProjectViewProjectNode" />
               <item name="javabrains-microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="movie-info-service" type="462c0819:PsiDirectoryNode" />
+              <item name="auth-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -214,21 +221,39 @@
             <path>
               <item name="microservices-tutorial" type="b2602c69:ProjectViewProjectNode" />
               <item name="javabrains-microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="movie-info-service" type="462c0819:PsiDirectoryNode" />
+              <item name="auth-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="microservices-tutorial" type="b2602c69:ProjectViewProjectNode" />
               <item name="javabrains-microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="movie-info-service" type="462c0819:PsiDirectoryNode" />
+              <item name="auth-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="microservices-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javabrains-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="auth-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="microservices-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javabrains-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="auth-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -248,53 +273,6 @@
               <item name="ratings-data-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="microservices-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javabrains-microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="ratings-data-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="microservices-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javabrains-microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="ratings-data-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="microservices-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javabrains-microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="ratings-data-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="microservices-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javabrains-microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="ratings-data-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="repositories" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="microservices-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javabrains-microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="ratings-data-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="microservices-tutorial" type="b2602c69:ProjectViewProjectNode" />
@@ -308,24 +286,32 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571594787791" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572122729410" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.demo.config" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.example" />
     </key>
@@ -333,6 +319,7 @@
       <recent name="com.example.moviecatalogservice.models" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\elenan\Desktop\IdeaProjects\javabrains-microservices" />
       <recent name="C:\Users\elenan\Desktop\IdeaProjects\test-microservices\javabrains-microservices\ratings-data-service\src\main\java" />
       <recent name="C:\Users\elenan\Desktop\IdeaProjects\test-microservices\javabrains-microservices\ratings-data-service\src\main\java\com\example\demo" />
     </key>
@@ -349,7 +336,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.MovieCatalogServiceApplication">
+  <component name="RunManager" selected="Spring Boot.DiscoveryServerApplication">
+    <configuration name="AuthServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="auth-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.AuthServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DiscoveryServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false">
       <module name="discovery-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.discoveryserver.DiscoveryServerApplication" />
@@ -362,6 +356,19 @@
       <module name="movie-catalog-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.moviecatalogservice.MovieCatalogServiceApplication" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovieInfoServiceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="auth-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.MovieInfoServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -387,7 +394,14 @@
       <item itemvalue="Spring Boot.MovieCatalogServiceApplication" />
       <item itemvalue="Spring Boot.MovieInfoServiceApplication" />
       <item itemvalue="Spring Boot.RatingsDataServiceApplication" />
+      <item itemvalue="Spring Boot.MovieInfoServiceApplication (1)" />
+      <item itemvalue="Spring Boot.AuthServiceApplication" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.MovieInfoServiceApplication (1)" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -401,11 +415,14 @@
       <updated>1571502592986</updated>
       <workItem from="1571502594360" duration="10781000" />
       <workItem from="1571593988447" duration="800000" />
+      <workItem from="1571775680056" duration="398000" />
+      <workItem from="1571855725324" duration="2295000" />
+      <workItem from="1572107221417" duration="7891000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11581000" />
+    <option name="totallyTimeSpent" value="22165000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -420,7 +437,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25302014" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21073826" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -443,13 +460,14 @@
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Database Console" order="15" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24966443" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3295302" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.3295302" />
+      <window_info anchor="right" id="Database" order="6" weight="0.2657718" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" />
@@ -502,46 +520,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ratings-data-service/src/main/java/com/example/demo/demo/repositories/RatingRepository.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ratings-data-service/src/main/java/com/example/demo/demo/RatingsDataServiceApplication.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ratings-data-service/src/main/java/com/example/demo/demo/models/Rating.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ratings-data-service/src/main/java/com/example/demo/demo/models/UserRating.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ratings-data-service/src/main/java/com/example/demo/demo/resources/RatingDataResource.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ratings-data-service/src/main/java/com/example/demo/resources/RatingDataResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ratings-data-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ratings-data-service/src/main/java/com/example/demo/demo/repositories/RatingRepository.java" />
+    <entry file="file://$PROJECT_DIR$/ratings-data-service/src/main/java/com/example/demo/demo/RatingsDataServiceApplication.java" />
+    <entry file="file://$PROJECT_DIR$/ratings-data-service/src/main/java/com/example/demo/demo/models/Rating.java" />
+    <entry file="file://$PROJECT_DIR$/ratings-data-service/src/main/java/com/example/demo/demo/models/UserRating.java" />
+    <entry file="file://$PROJECT_DIR$/ratings-data-service/src/main/java/com/example/demo/demo/resources/RatingDataResource.java" />
     <entry file="file://$PROJECT_DIR$/ratings-data-service/src/main/java/com/example/demo/repositories/RatingRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ratings-data-service/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -622,13 +609,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/movie-catalog-service/src/main/java/com/example/moviecatalogservice/resources/MovieCatalogResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="33" column="64" selection-start-line="33" selection-start-column="64" selection-end-line="33" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.0.RELEASE/spring-web-5.2.0.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -645,10 +625,198 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/movie-catalog-service/src/main/java/com/example/moviecatalogservice/services/MovieInfoService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="28" column="14" lean-forward="true" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+        <state relative-caret-position="226">
+          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movie-catalog-service/src/main/java/com/example/moviecatalogservice/resources/MovieCatalogResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="33" column="64" selection-start-line="33" selection-start-column="64" selection-end-line="33" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-service/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-service/mvnw">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-service/mvnw.cmd">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/5926eda5-bb4a-41dc-9a19-9c38274df023/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="42" column="2" lean-forward="true" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ratings-data-service/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ratings-data-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="41" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discovery-server/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discovery-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-service/src/main/java/com/example/demo/models/Movie.java" />
+    <entry file="file://$PROJECT_DIR$/auth-service/src/main/java/com/example/demo/AuthServiceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.2.0.RELEASE/spring-security-core-5.2.0.RELEASE.jar!/org/springframework/security/crypto/password/NoOpPasswordEncoder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-service/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/function/Function.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="614">
+          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-service/src/main/java/com/example/demo/models/AuthenticationRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+          <folding>
+            <element signature="e#162#163#0" expanded="true" />
+            <element signature="e#193#194#0" expanded="true" />
+            <element signature="e#241#242#0" expanded="true" />
+            <element signature="e#281#282#0" expanded="true" />
+            <element signature="e#316#317#0" expanded="true" />
+            <element signature="e#347#348#0" expanded="true" />
+            <element signature="e#395#396#0" expanded="true" />
+            <element signature="e#435#436#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-service/src/main/java/com/example/demo/util/JwtUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="614">
+          <caret line="61" column="91" selection-start-line="61" selection-start-column="91" selection-end-line="61" selection-end-column="91" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1681#1682#0" expanded="true" />
+            <element signature="e#1802#1803#0" expanded="true" />
+            <element signature="e#1925#1926#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-service/src/main/java/com/example/demo/models/AuthenticationResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="35" />
+          <folding>
+            <element signature="e#154#155#0" expanded="true" />
+            <element signature="e#184#185#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.2.0.RELEASE/spring-security-core-5.2.0.RELEASE.jar!/org/springframework/security/authentication/AuthenticationDetailsSource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#0#243#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.0.RELEASE/spring-security-web-5.2.0.RELEASE.jar!/org/springframework/security/web/authentication/WebAuthenticationDetailsSource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="10" column="72" lean-forward="true" selection-start-line="10" selection-start-column="72" selection-end-line="10" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-service/src/main/java/com/example/demo/filters/JwtRequestFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="49" column="39" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-service/src/main/java/com/example/demo/services/MyUserDetailsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-service/src/main/java/com/example/demo/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1940#1941#0" expanded="true" />
+            <element signature="e#1996#1997#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-service/src/main/java/com/example/demo/controllers/AuthController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="614">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1088#1089#0" expanded="true" />
+            <element signature="e#1123#1124#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -656,6 +824,66 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>auth-service2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.19812793" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>11</last-edited>
@@ -663,6 +891,18 @@
             <option name="proportions">
               <list>
                 <option value="0.19812793" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>

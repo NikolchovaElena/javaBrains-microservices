@@ -5,7 +5,7 @@ import java.util.List;
 public class UserRating {
 
     private String userId;
-    private List<Rating>userRating;
+    private List<Rating> userRating;
 
     public UserRating() {
     }
